@@ -17,6 +17,6 @@ class MainActivity : AppCompatActivity() {
 
         //Step 4: Provide a RecyclerView.Adapter
         recyclerView.adapter = NumberDisplayAdapter()
-        recyclerView.layoutManager = GridLayoutManager(this,1)
+        recyclerView.layoutManager = GridLayoutManager(this,2)
     }
 }

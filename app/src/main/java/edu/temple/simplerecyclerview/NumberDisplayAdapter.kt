@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class NumberDisplayAdapter: RecyclerView.Adapter<NumberDisplayAdapter.NumberViewHolder>() {
 
-    class NumberViewHolder (val _textView: TextView) : RecyclerView.ViewHolder (_textView) {
+    class NumberViewHolder (_textView: TextView) : RecyclerView.ViewHolder (_textView) {
         val textView = _textView
     }
 
@@ -25,7 +25,7 @@ class NumberDisplayAdapter: RecyclerView.Adapter<NumberDisplayAdapter.NumberView
     }
 
     override fun onBindViewHolder(holder: NumberViewHolder, position: Int) {
-        holder.textView.setText(position)
+        holder.textView.text=position.toString()
     }
 
     //Step 3b: Complete function definitions for adapter
